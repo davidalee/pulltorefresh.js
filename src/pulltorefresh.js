@@ -201,7 +201,7 @@ function _setupEvents() {
 
   window.addEventListener('touchend', _onTouchEnd);
   window.addEventListener('touchstart', _onTouchStart);
-  window.addEventListener('touchmove', _onTouchMove, { passive: false });
+  window.addEventListener('touchmove', _onTouchMove, { passive: true });
 
   // Store event handlers to use for teardown later
   return {
